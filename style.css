@@ -116,4 +116,79 @@
       align-items: center;
     }
   }
+  .detail-header {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                url('https://images.unsplash.com/photo-1526045612212-70caf35c14df?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .product-detail {
+    padding: 60px 0;
+  }
+  
+  .detail-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .detail-content img {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .detail-text {
+    max-width: 600px;
+  }
+  
+  .detail-text h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .detail-text p {
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  .detail-text ul {
+    padding-left: 20px;
+    margin: 15px 0;
+  }
+  
+  .detail-text li {
+    margin-bottom: 5px;
+  }
+  
+  .detail-text button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    border: none;
+    background-color: #000;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .detail-text button:hover {
+    background-color: #444;
+  }
+  
+  @media (max-width: 768px) {
+    .detail-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .detail-text {
+      max-width: 100%;
+    }
+  }
   
